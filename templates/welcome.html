@@ -1,10 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
     <head>
         <meta charset="utf-8"/>
-        <title>🚀 服务已启动</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>🐱 喵哥 API 服务</title>
+        <style>
+            body {
+                font-family: 'Microsoft YaHei', sans-serif;
+                background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .container {
+                text-align: center;
+                background: white;
+                padding: 3rem;
+                border-radius: 20px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                transform: translateY(0);
+                transition: all 0.3s ease;
+                max-width: 90%;
+                width: 500px;
+            }
+            .container:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            }
+            h1 {
+                color: #1a1a1a;
+                margin-bottom: 1.5rem;
+                font-size: 2.2rem;
+                background: linear-gradient(45deg, #2196F3, #4CAF50);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .cat-emoji {
+                font-size: 5rem;
+                margin-bottom: 1.5rem;
+                animation: bounce 2s infinite;
+                display: inline-block;
+            }
+            .message {
+                color: #666;
+                font-size: 1.3rem;
+                margin-bottom: 1.5rem;
+            }
+            .status {
+                color: #52c41a;
+                font-weight: bold;
+                margin-top: 1.5rem;
+                padding: 0.8rem 1.5rem;
+                background: #f6ffed;
+                border-radius: 30px;
+                border: 1px solid #b7eb8f;
+                display: inline-block;
+            }
+            @keyframes bounce {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-10px); }
+            }
+            .version {
+                color: #999;
+                font-size: 0.9rem;
+                margin-top: 1.5rem;
+            }
+            .footer {
+                margin-top: 2rem;
+                font-size: 0.9rem;
+                color: #666;
+            }
+            .footer a {
+                color: #1890ff;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+            .footer a:hover {
+                color: #40a9ff;
+            }
+        </style>
     </head>
     <body>
-        <p>deepseek-to-api已启动！</p>
+        <div class="container">
+            <div class="cat-emoji">🐱</div>
+            <h1>喵哥欢迎您！</h1>
+            <p class="message">欢迎使用 deepseek-to-api 服务</p>
+            <p class="status">✨ 服务已成功启动 ✨</p>
+            <div class="version">Version 1.0.0</div>
+            <div class="footer">
+                Powered by <a href="https://github.com/deepseek-ai" target="_blank">DeepSeek AI</a>
+            </div>
+        </div>
     </body>
-</html>
+</html> 
